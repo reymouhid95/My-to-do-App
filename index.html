@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="time()">
+    <!-- Container parent -->
+    <div class="todo-container">
+      <div class="date-hour">
+        <p id="date">Date</p>
+        <p id="hour">Hour</p>
+      </div>
+      <!-- Header -->
+      <header>
+        <h1>Liste de Tâche pour Juillet</h1>
+      </header>
+      <!-- Form -->
+      <!-- Add Todo -->
+      <form action="" id="todo-form">
+        <p>Ajouter La Tâche ici !</p>
+        <div class="form-control">
+          <input type="text" id="todo-input" placeholder="Saisir une Tâche" />
+          <button type="submit">
+            <i class="fa-thin fa-plus"></i>
+          </button>
+        </div>
+      </form>
+      <!-- Edit The Todos -->
+      <form action="" id="edit-form" class="hide">
+        <p>Modifier La Tâche</p>
+        <div class="form-control">
+          <input
+            type="text"
+            id="edit-input"
+            placeholder="Type here about your next task"
+          />
+          <button type="submit">
+            <i class="fa-solid fa-check-double"></i>
+          </button>
+        </div>
+
+        <button type="button" id="cancel-edit-btn">Retour</button>
+      </form>
+      <!-- Todo List -->
+      <div class="todo-list" id="todo-list">
+        <div class="todo">
+          <h3>Une Tâche par Défaut Ici !</h3>
+          <button class="finish-todo">
+            <i class="fa-solid fa-check"></i>
+          </button>
+          <button class="edit-todo">
+            <i class="fa-solid fa-pen"></i>
+          </button>
+          <button class="remove-todo">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="app.js"></script>
+  </body>
+</html>
